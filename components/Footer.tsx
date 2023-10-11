@@ -4,6 +4,13 @@ import logo from "../assets/images/logoclient.png";
 import footer1 from "../assets/images/footer1.png";
 import footer2 from "../assets/images/footer2.png";
 const Footer = () => {
+  const navigate = [
+    { id: "home", name: "Home" },
+    { id: "clients", name: "Clients" },
+    { id: "services", name: "Services" },
+    { id: "projects", name: "Projects" },
+    { id: "about_us", name: "About Us" },
+  ];
   return (
     <section className="w-full bg-[#282C4B] py-7 relative ">
       <Image className="absolute bottom-0" src={footer1} alt="" />
@@ -109,12 +116,11 @@ const Footer = () => {
           </div>
           <div className="col-span-7 lg:col-span-6">
             <ul className="flex justify-between text-[0.75rem] lg:text-[1.5rem] lg:px-[6rem]">
-              <li>Home</li>
-              <li>Services</li>
-              <li>Clients</li>
-              <li>About us</li>
-              <li>Project</li>
-              <li>Contact us</li>
+              {navigate.map((menu, i) => (
+                <li key={i}>
+                  <a href={`#${menu.id}`}>{menu.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="col-span-7 lg:col-span-6 flex  lg:justify-end">

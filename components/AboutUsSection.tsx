@@ -33,7 +33,7 @@ const AboutUsSection = () => {
             </p>
             <div className="w-full flex justify-start mt-[2rem]">
               <button className="text-center lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
-                Contact Us
+                Learn more
               </button>
             </div>
           </div>

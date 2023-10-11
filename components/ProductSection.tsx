@@ -4,10 +4,11 @@ import product1 from "../assets/images/product1.png";
 import product2 from "../assets/images/product2.png";
 import product3 from "../assets/images/product3.png";
 import product4 from "../assets/images/product4.png";
+import product5 from "../assets/images/product5.png";
 const ProductSection = () => {
   return (
     <section className="w-full" id="projects">
-      <div className="container mx-auto text-text-color py-[3.975rem] px-[1.5rem] lg:px-0">
+      <div className="container mx-auto text-text-color py-[1rem] lg:py-[3.975rem] px-[1.5rem] lg:px-0  animate__animated animate__fadeInUp ">
         <div>
           <h1 className="hidden lg:block font-[700] text-[2.5rem] mb-[1rem]">
             We create world-class digital products
@@ -18,8 +19,8 @@ const ProductSection = () => {
           </p>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-5 gap-4 grid-rows-2">
-            <div className="lg:col-span-3 col-span-5 lg:row-span-2">
+          <div className="grid grid-cols-4 gap-8 grid-rows-2">
+            <div className="lg:col-span-2 col-span-5 lg:row-span-2">
               <Image src={product1} className="w-full" alt="" />
               <div className="space-y-2">
                 <p className="font-[400] text-[0.8rem]">
@@ -35,7 +36,7 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="flex flex-col h-full justify-between space-y-2 lg:col-span-1 col-span-5">
-              <Image className="w-full" src={product3} alt="" />
+              <Image className="w-full" src={product2} alt="" />
               <div className="space-y-1">
                 <p className="font-[400] text-[0.8rem]">
                   App Design - June 22, 2022
@@ -46,7 +47,7 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="flex flex-col h-full justify-between space-y-2 lg:col-span-1 col-span-5">
-              <Image className="w-full" src={product2} alt="" />
+              <Image className="w-full" src={product3} alt="" />
               <div className="space-y-1">
                 <p className="font-[400] text-[0.8rem]">
                   App Design - June 22, 2022
@@ -68,7 +69,7 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="flex flex-col h-full justify-between space-y-2 lg:col-span-1 col-span-5">
-              <Image className="w-full" src={product2} alt="" />
+              <Image className="w-full" src={product5} alt="" />
               <div className="space-y-1">
                 <p className="font-[400] text-[0.8rem]">
                   App Design - June 22, 2022

@@ -77,12 +77,11 @@ const ContactSection = () => {
                 <h3 className="text-[1rem] lg:text-[1.25rem] text-text-color mb-[11px]">
                   Message
                 </h3>
-                <input
+                <textarea
                   style={{}}
-                  type="text"
                   id="email"
                   name="email"
-                  className="bg-[#0C0F9308] p-[0.9375rem] w-full"
+                  className="bg-[#0C0F9308] p-[0.9375rem] lg:h-[8rem] w-full"
                   placeholder="Write Message..."
                 />
               </div>

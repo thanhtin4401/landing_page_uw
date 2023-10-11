@@ -82,8 +82,10 @@ const Navigate = () => {
 
           <ul
             className={`${
-              open ? "flex ease-in-out opacity-100 " : "opacity-0 visible"
-            } w-[12rem] space-y-6 flex-col transition-all  justify-start absolute top-[3.75rem] right-0 py-[1rem] px-[1.5rem] bg-[white] rounded-lg text-[0.75rem]`}
+              open
+                ? "animate__fadeInUp animate__faster"
+                : "animate__fadeOutDown"
+            } w-[12rem] animate__animated space-y-6 flex-col transition-all  justify-start absolute top-[3.75rem] right-0 py-[1rem] px-[1.5rem] bg-[white] rounded-lg text-[0.75rem]`}
           >
             {navigate.map((menu, i) => (
               <li

@@ -8,7 +8,7 @@ const ServiceSection = () => {
       className="w-full text-[#413F60] px-[1.5rem] lg:px-0"
       id="services"
     >
-      <div className="container mx-auto flex justify-center py-[3.2rem] ">
+      <div className="container mx-auto flex justify-center py-[1rem] lg:py-[3.2rem] ">
         <h1 className="font-[700] text-[1.25rem] lg:text-[2.5rem]">
           Our Services
         </h1>
