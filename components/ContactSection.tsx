@@ -1,11 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import vector1 from "../assets/images/VectorContact1.png";
 import vector2 from "../assets/images/VectorContact2.png";
 import contactelement from "../assets/images/portrait_joyful_young-man_white_shirt.png";
+import VisibilitySensor from "react-visibility-sensor";
 import Image from "@/node_modules/next/image";
 const ContactSection = () => {
   return (
-    <section
+    <VisibilitySensor
       className="w-full text-[#0C0F93] bg-[white] mb-6 lg:mb-52"
       id="contact_us"
     >
@@ -41,7 +43,7 @@ const ContactSection = () => {
                   type="text"
                   id="fullname"
                   name="fullname"
-                  className="bg-[#0C0F9308] p-[0.9375rem] w-full"
+                  className="bg-[#0C0F9308]  p-[0.9375rem] w-full outline-none"
                   placeholder="Input Your Name"
                 />
               </div>
@@ -55,7 +57,7 @@ const ContactSection = () => {
                     type="text"
                     id="email"
                     name="Email"
-                    className="bg-[#0C0F9308] p-[0.9375rem] w-full"
+                    className="bg-[#0C0F9308] p-[0.9375rem] w-full outline-none"
                     placeholder="Input Your Email"
                   />
                 </div>
@@ -68,7 +70,7 @@ const ContactSection = () => {
                     type="text"
                     id="Subject"
                     name="Subject"
-                    className="bg-[#0C0F9308] p-[0.9375rem] w-full"
+                    className="bg-[#0C0F9308] p-[0.9375rem] w-full outline-none"
                     placeholder=""
                   />
                 </div>
@@ -94,7 +96,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </VisibilitySensor>
   );
 };
 

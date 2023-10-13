@@ -50,7 +50,7 @@ const Navigate = () => {
           </ul>
           <a
             href="#contact_us"
-            className="text-center ml-2 px-[24px] py-[12px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full"
+            className="text-center ml-2 px-[24px] py-[12px] bg-primary-color text-[white]  font-[500] rounded-full"
           >
             Contact Us
           </a>

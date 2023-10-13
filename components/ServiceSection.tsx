@@ -27,7 +27,7 @@ const ServiceSection = () => {
             Etiam netus faucibus nunc, pellentesque in nisl..
           </p>
           <div className="w-full flex justify-end mt-[2rem]">
-            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
+            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] bg-primary-color text-[white] hover:-translate-y-1/2 transition-all duration-500 font-[500] rounded-full">
               Learn More
             </button>
           </div>
@@ -45,7 +45,7 @@ const ServiceSection = () => {
             Etiam netus faucibus nunc, pellentesque in nisl..
           </p>
           <div className="w-full flex justify-end mt-[2rem]">
-            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
+            <button className="text-center ml-2 hover:-translate-y-1/2 transition-all duration-500  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
               Learn More
             </button>
           </div>

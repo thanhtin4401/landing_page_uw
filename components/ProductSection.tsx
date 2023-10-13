@@ -1,14 +1,31 @@
+"use client";
 import Image from "@/node_modules/next/image";
-import React from "react";
+import React, { useState } from "react";
 import product1 from "../assets/images/product1.png";
 import product2 from "../assets/images/product2.png";
 import product3 from "../assets/images/product3.png";
 import product4 from "../assets/images/product4.png";
 import product5 from "../assets/images/product5.png";
+import VisibilitySensor from "react-visibility-sensor";
 const ProductSection = () => {
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const onChangeVisibility = (visible: any) => {
+    if (visible && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  };
   return (
-    <section className="w-full" id="projects">
-      <div className="container mx-auto text-text-color py-[1rem] lg:py-[3.975rem] px-[1.5rem] lg:px-0  animate__animated animate__fadeInUp ">
+    <VisibilitySensor
+      partialVisibility
+      onChange={onChangeVisibility}
+      className="w-full"
+      id="projects"
+    >
+      <div
+        className={`container mx-auto text-text-color py-[1rem] lg:py-[3.975rem] px-[1.5rem] lg:px-0  animate__animated ${
+          hasAnimated ? "animate__fadeInUp" : ""
+        }  `}
+      >
         <div>
           <h1 className="hidden lg:block font-[700] text-[2.5rem] mb-[1rem]">
             We create world-class digital products
@@ -82,7 +99,7 @@ const ProductSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </VisibilitySensor>
   );
 };
 
