@@ -6,7 +6,6 @@ import client1 from "../assets/images/Logo_1.png";
 import client2 from "../assets/images/Logo_2.png";
 import client3 from "../assets/images/Logo_3.png";
 import client4 from "../assets/images/Logo_4.png";
-import VisibilitySensor from "react-visibility-sensor";
 const ClientSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const onChangeVisibility = (visible: any) => {

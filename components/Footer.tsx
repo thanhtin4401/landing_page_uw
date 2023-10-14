@@ -12,7 +12,7 @@ const Footer = () => {
     { id: "about_us", name: "About Us" },
   ];
   return (
-    <section className="w-full bg-[#282C4B] py-7 relative ">
+    <section className="w-full bg-[#282C4B]  py-7 relative ">
       <Image className="absolute bottom-0" src={footer1} alt="" />
       <Image className="absolute bottom-0 right-0" src={footer2} alt="" />
       <div className="container mx-auto px-[1.5rem] lg:px-0">
@@ -25,7 +25,7 @@ const Footer = () => {
                   Logo
                 </h1>
               </div>
-              <ul className="flex space-x-4 px-[]">
+              <ul className="flex space-x-4 px-[] ">
                 <li className="p-[7px] bg-[white] rounded-[8px]">
                   <a href="" className="">
                     <svg
@@ -118,7 +118,13 @@ const Footer = () => {
             <ul className="flex justify-between text-[0.75rem] lg:text-[1.5rem] lg:px-[6rem]">
               {navigate.map((menu, i) => (
                 <li key={i}>
-                  <a href={`#${menu.id}`}>{menu.name}</a>
+                  <a
+                    style={{ color: "white" }}
+                    className="text-white"
+                    href={`#${menu.id}`}
+                  >
+                    {menu.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -139,7 +145,9 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>
-                +9234664646
+                <span style={{ color: "white" }} className="">
+                  +9234664646
+                </span>
               </div>
               <div>
                 <div className="flex items-center justify-center text-[0.875rem]lg:text-[1.1rem] font-[400]">
@@ -156,14 +164,20 @@ const Footer = () => {
                       fill="white"
                     />
                   </svg>
-                  Iftikhar123@gmail.com
+                  <span style={{ color: "white" }}>Iftikhar123@gmail.com</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="lg:col-span-6 col-span-7 flex justify-center">
-            <div className="pt-[4px] px-[13px] pb-[8px] lg:border-l-2 border-opacity-40">
-              <span className="text-[0.75rem] lg:text-[1rem] font-[400]">
+            <div
+              style={{ color: "white" }}
+              className="pt-[4px] px-[13px] pb-[8px] lg:border-l-2 border-opacity-40"
+            >
+              <span
+                style={{ color: "white" }}
+                className="text-[0.75rem] lg:text-[1rem] font-[400]"
+              >
                 Copyright Pebisnis ( website name ) All right reserved
               </span>
             </div>

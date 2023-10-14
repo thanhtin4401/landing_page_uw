@@ -1,12 +1,14 @@
+"use client";
 import Image from "@/node_modules/next/image";
 import React from "react";
 import background from "../assets/images/backgroundheader.png";
 import headerelemnent from "../assets/images/headerelement.png";
 import headerperson from "../assets/images/portrait_smiling_handsome_man_eyeglasses.png";
 import "animate.css";
+import styled from "styled-components";
 const HeaderSection = () => {
   return (
-    <section
+    <HeaderSectionCSS
       style={{
         backgroundImage: `url(${background.src})`,
         backgroundPosition: "center",
@@ -39,7 +41,7 @@ const HeaderSection = () => {
         </div>
         <div className="header_right relative w-2/5 over-hidden">
           <Image
-            className="h-full w-[20rem] max-w-none lg:w-full object-container animate__animated animate__fadeInUp"
+            className="h-full animate-waving animate__animated animate__fadeInUp w-[20rem] max-w-none lg:w-full object-container "
             src={headerperson}
             alt=""
           />
@@ -60,8 +62,23 @@ const HeaderSection = () => {
           Trusted by greatest companies
         </span>
       </div>
-    </section>
+    </HeaderSectionCSS>
   );
 };
-
+const HeaderSectionCSS = styled.div`
+  .wave {
+    animation: move2 5s linear infinite;
+  }
+  @keyframes move2 {
+    0% {
+      transform: rotate(2deg) translate(4px, 4px);
+    }
+    50% {
+      transform: rotate(-2deg) translate(-4px, -4px);
+    }
+    100% {
+      transform: rotate(2deg) translate(4px, 4px);
+    }
+  }
+`;
 export default HeaderSection;

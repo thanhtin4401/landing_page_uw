@@ -1,19 +1,33 @@
+"use client";
 import React, { useState } from "react";
 import vector1 from "../assets/images/VectorContact1.png";
 import vector2 from "../assets/images/VectorContact2.png";
 import contactelement from "../assets/images/portrait_joyful_young-man_white_shirt.png";
 import Image from "@/node_modules/next/image";
+import VisibilitySensor from "react-visibility-sensor";
 const ContactSection = () => {
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const onChangeVisibility = (visible: any) => {
+    if (visible && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  };
   return (
-    <section
+    <VisibilitySensor
+      partialVisibility
+      onChange={onChangeVisibility}
       className="w-full text-[#0C0F93]   bg-[white] mb-6 lg:mb-52"
       id="contact_us"
     >
       <div className="container mx-auto flex flex-col lg:flex-row pt-9 lg:pt-28 px-[1.5rem] lg:px-0">
-        <div className="contact_left w-full order-1 lg:order-0 lg:w-2/5">
+        <div
+          className={`contact_left ${
+            hasAnimated ? "animate__animated animate__fadeInLeft" : ""
+          }  w-full order-1 lg:order-0 lg:w-2/5`}
+        >
           <div className="w-full relative">
             <Image
-              className="absolute top-[2rem] right-[8rem] z-10"
+              className="absolute animate-waving top-[2rem] right-[8rem] z-10"
               src={vector1}
               alt=""
             />
@@ -21,7 +35,11 @@ const ContactSection = () => {
             <Image className="z-20 relative" src={contactelement} alt="" />
           </div>
         </div>
-        <div className="contact_right !overflow-hidden w-full lg:w-3/5 lg:order-1">
+        <div
+          className={`contact_right ${
+            hasAnimated ? "animate__animated animate__fadeInUp" : ""
+          }  w-full lg:w-3/5 lg:order-1`}
+        >
           <div className="w-full">
             <div className="lg:w-full flex justify-center lg:justify-start">
               <div className="mb-[2.5rem]">
@@ -94,8 +112,24 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </VisibilitySensor>
   );
 };
+// const Contactsection = styled.div`
+//   .wave img {
+//     animation: move2 5s infinite;
+//   }
+//   @keyframes move2 {
+//     0% {
+//       transform: rotate(1deg) translate(2px, 2px);
+//     }
+//     50% {
+//       transform: rotate(-1deg) translate(-2px, -2px);
+//     }
+//     100% {
+//       transform: rotate(1deg) translate(2px, 2px);
+//     }
+//   }
+// `;
 
 export default ContactSection;
