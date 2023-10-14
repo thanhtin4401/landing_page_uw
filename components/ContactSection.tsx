@@ -1,14 +1,12 @@
-"use client";
 import React, { useState } from "react";
 import vector1 from "../assets/images/VectorContact1.png";
 import vector2 from "../assets/images/VectorContact2.png";
 import contactelement from "../assets/images/portrait_joyful_young-man_white_shirt.png";
-import VisibilitySensor from "react-visibility-sensor";
 import Image from "@/node_modules/next/image";
 const ContactSection = () => {
   return (
-    <VisibilitySensor
-      className="w-full text-[#0C0F93] bg-[white] mb-6 lg:mb-52"
+    <section
+      className="w-full text-[#0C0F93]   bg-[white] mb-6 lg:mb-52"
       id="contact_us"
     >
       <div className="container mx-auto flex flex-col lg:flex-row pt-9 lg:pt-28 px-[1.5rem] lg:px-0">
@@ -23,7 +21,7 @@ const ContactSection = () => {
             <Image className="z-20 relative" src={contactelement} alt="" />
           </div>
         </div>
-        <div className="contact_right w-full lg:w-3/5 lg:order-1">
+        <div className="contact_right !overflow-hidden w-full lg:w-3/5 lg:order-1">
           <div className="w-full">
             <div className="lg:w-full flex justify-center lg:justify-start">
               <div className="mb-[2.5rem]">
@@ -88,7 +86,7 @@ const ContactSection = () => {
                 />
               </div>
               <div className="flex w-full justify-end pt-[4rem]">
-                <button className="text-center ml-2 px-[24px] py-[12px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
+                <button className="text-center  ml-2 px-[24px] py-[12px] bg-primary-color text-[white] bg-primary-color font-[500] rounded-full">
                   Contact Us
                 </button>
               </div>
@@ -96,7 +94,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </VisibilitySensor>
+    </section>
   );
 };
 

@@ -29,10 +29,10 @@ const HeaderSection = () => {
             bibendum nibh a urna.
           </p>
           <div className="lg:space-x-8 space-x-4 flex animate__animated animate__fadeInUp">
-            <button className="text-center lg:ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px]  border border-primary-color text-primary-color font-[500] rounded-full">
+            <button className="text-center lg:ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px]  border border-primary-color text-primary-color font-[500] rounded-full hover:bg-primary-color transition-all duration-500  hover:!text-[#fff] hover:translate-y-[-20%]">
               Learn more
             </button>
-            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] text-[white] bg-primary-color font-[500] rounded-full animate__animated animate__fadeInUp">
+            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] text-[white] bg-primary-color font-[500] rounded-full animate__animated animate__fadeInUp hover:text-[red] hover:translate-y-[-20%] ">
               Contact Us
             </button>
           </div>

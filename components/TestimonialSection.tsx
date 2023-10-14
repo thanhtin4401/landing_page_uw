@@ -47,6 +47,14 @@ const TestimonialSection = () => {
               className="absolute hidden lg:block -top-[2rem] -left-[4rem]"
               alt=""
             />
+            <p className="opacity-50  w-text-[1rem] font-[400] leading-8  text-[#03014C] text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel
+              lobortis tincidunt fames quisque mauris at diam. Nullam morbi
+              ipsum turpis amet id posuere torto quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit es se cillum
+              dolore.
+            </p>
 
             <Slider {...settings} className="mt-[20px]">
               <div>
