@@ -14,7 +14,7 @@ const ClientSection = () => {
     }
   };
   return (
-    <section className="w-full bg-[white]" id="clients">
+    <section className="w-full bg-white" id="clients">
       <div
         className={`container mx-auto py-[2.5rem] lg:py-[7.5rem] flex justify-center w-full space-x-4 lg:space-x-10 px-[1.5rem] lg:px-0 ${
           hasAnimated

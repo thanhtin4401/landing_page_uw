@@ -1,21 +1,19 @@
-"use client";
 import Image from "@/node_modules/next/image";
 import React from "react";
 import background from "../assets/images/backgroundheader.png";
 import headerelemnent from "../assets/images/headerelement.png";
 import headerperson from "../assets/images/portrait_smiling_handsome_man_eyeglasses.png";
 import "animate.css";
-import styled from "styled-components";
 const HeaderSection = () => {
   return (
-    <HeaderSectionCSS
+    <section
       style={{
         backgroundImage: `url(${background.src})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className={`bg-cover bg-no-repeat bg-center w-full  overflow-hidden bg-[white]`}
+      className={`bg-cover bg-no-repeat bg-center w-full  overflow-hidden bg-white`}
       id="home"
     >
       <div className="container pt-12 lg:pt-32 mx-auto flex pl-[1.5rem] lg:pl-0">
@@ -31,17 +29,17 @@ const HeaderSection = () => {
             bibendum nibh a urna.
           </p>
           <div className="lg:space-x-8 space-x-4 flex animate__animated animate__fadeInUp">
-            <button className="text-center lg:ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px]  border border-primary-color text-primary-color font-[500] rounded-full hover:bg-primary-color transition-all duration-500  hover:!text-[#fff] hover:translate-y-[-20%]">
+            <button className="text-center lg:ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px]  border border-primary-color text-primary-color font-[500] rounded-full hover:bg-primary-color transition-all duration-500  hover:!text-white hover:translate-y-[-20%]">
               Learn more
             </button>
-            <button className="text-center ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px] text-[white] bg-primary-color font-[500] rounded-full animate__animated animate__fadeInUp hover:text-[red] hover:translate-y-[-20%] ">
+            <button className="text-center lg:ml-2  lg:px-[1.5rem] px-[1rem] lg:py-[12px] py-[8px] text-[12px] lg:text-[20px]  text-[white] bg-primary-color  font-[500] rounded-full hover:bg-primary-color transition-all duration-500  hover:!text-white hover:translate-y-[-20%]">
               Contact Us
             </button>
           </div>
         </div>
         <div className="header_right relative w-2/5 over-hidden">
           <Image
-            className="h-full animate-waving animate__animated animate__fadeInUp w-[20rem] max-w-none lg:w-full object-container "
+            className="h-full w-[20rem] max-w-none lg:w-full object-container animate__animated animate__fadeInUp"
             src={headerperson}
             alt=""
           />
@@ -57,28 +55,13 @@ const HeaderSection = () => {
           />
         </div>
       </div>
-      <div className="w-full flex justify-center items-center py-8 bg-[#F7F8F9]">
+      <div className="w-full flex justify-center items-center py-8 bg-background-color">
         <span className="text-[0.75rem] lg:text-[1.4rem] text-primary-color font-[500]  animate__animated animate__fadeInUp animate__delay-1s">
           Trusted by greatest companies
         </span>
       </div>
-    </HeaderSectionCSS>
+    </section>
   );
 };
-const HeaderSectionCSS = styled.div`
-  .wave {
-    animation: move2 5s linear infinite;
-  }
-  @keyframes move2 {
-    0% {
-      transform: rotate(2deg) translate(4px, 4px);
-    }
-    50% {
-      transform: rotate(-2deg) translate(-4px, -4px);
-    }
-    100% {
-      transform: rotate(2deg) translate(4px, 4px);
-    }
-  }
-`;
+
 export default HeaderSection;

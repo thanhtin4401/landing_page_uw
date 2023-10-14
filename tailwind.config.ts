@@ -23,6 +23,12 @@ const config: Config = {
       "primary-color": "#6D6CE3",
       "text-color": "#0C273C",
       "second-color": "#2E3E5C",
+      "gray-color": "#282C4B",
+      "background-color": "#F7F8F9",
+      "blue-color-300": "#0C0F93",
+      "dark-blue": "#170F49",
+      "black-color-300": "#0C0F9308",
+      white: "#FFFFFF",
     },
   },
 

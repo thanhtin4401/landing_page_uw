@@ -9,6 +9,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+:root {
+  --animate-delay: 0.5s !important;
+}
+
+.animate__delay-1s {
+  --animate-delay: 0.5s !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

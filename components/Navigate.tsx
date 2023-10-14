@@ -22,15 +22,14 @@ const Navigate = () => {
     setToggleNavigate((toggleNavigate) => !toggleNavigate);
   };
   return (
-    <div className="fixed w-full bg-[white] text-black z-50">
-      <div className="flex flex-col lg:flex-row space-x-8 space-y-8">
-        <div className="product_left w-full lg:w-2/4"></div>
-        <div className="product_right w-full lg:w-2/4"></div>
-      </div>
+    <div className="fixed w-full bg-white text-black z-50 ">
       <div className="container flex justify-between mx-auto py-5 px-[1.5rem] lg:px-0">
-        <a href="#home" className="flex justify-center items-center">
+        <a
+          href="#home"
+          className="flex justify-center items-center animate__animated animate__fadeInLeft"
+        >
           <Image src={logo} alt="" />
-          <h1 className="text-[1.5rem] text-[#170F49] font-[600] ml-2">Logo</h1>
+          <h1 className="text-[1.5rem] text-dark-blue font-[600] ml-2">Logo</h1>
         </a>
         <div className="justify-center hidden lg:flex space-x-8">
           <ul className="flex justify-center space-x-8 text-[1.4rem] items-center font-[500]">
@@ -55,7 +54,7 @@ const Navigate = () => {
             Contact Us
           </a>
         </div>
-        <div className=" justify-center hidden lg:flex items-center space-x-4">
+        <div className=" justify-center hidden lg:flex items-center space-x-4 animate__animated animate__fadeInRight">
           <Image src={phone} alt="" />
           <p className="text-[1.4rem] text-text-color font-[500]">
             +92323284724
@@ -73,9 +72,9 @@ const Navigate = () => {
               <path
                 d="M2 2H24.6667M2 10.5H24.6667M14.75 19H24.6667"
                 stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -85,7 +84,7 @@ const Navigate = () => {
               open
                 ? "animate__fadeInUp animate__faster"
                 : "animate__fadeOutDown"
-            } w-[12rem] animate__animated space-y-6 flex-col transition-all  justify-start absolute top-[3.75rem] right-0 py-[1rem] px-[1.5rem] bg-[white] rounded-lg text-[0.75rem]`}
+            } w-[12rem] animate__animated space-y-6 flex-col transition-all  justify-start absolute top-[3.75rem] right-0 py-[1rem] px-[1.5rem] bg-white rounded-lg text-[0.75rem]`}
           >
             {navigate.map((menu, i) => (
               <li
@@ -100,7 +99,7 @@ const Navigate = () => {
                 <a href={`#${menu.id}`}>{menu.name}</a>
               </li>
             ))}
-            <li className="flex space-x-2 justify-start items-center">
+            <li className="flex space-x-2 justify-start items-center ">
               <Image src={phone} alt="" />
               <p className="text-[0.8125rem] text-text-color font-[500]">
                 +92323284724
