@@ -2,6 +2,7 @@
 import Image from "@/node_modules/next/image";
 import React, { useState } from "react";
 import logo from "../assets/images/logoclient.png";
+import "animate.css";
 import phone from "../assets/images/phone.png";
 const Navigate = () => {
   const [open, setOpen] = useState(false);
@@ -10,11 +11,11 @@ const Navigate = () => {
     setOpen(!open);
   };
   const navigate = [
-    { id: "home", name: "Home" },
-    { id: "clients", name: "Clients" },
-    { id: "services", name: "Services" },
-    { id: "projects", name: "Projects" },
-    { id: "about_us", name: "About Us" },
+    { id: "/", name: "Home" },
+    { id: "/#clients", name: "Clients" },
+    { id: "/choose_service", name: "Services" },
+    { id: "/project_detail", name: "Projects" },
+    { id: "/#about_us", name: "About Us" },
   ];
   const [active, setActive] = useState(0);
   const [toggleNavigate, setToggleNavigate] = useState(false);
@@ -25,7 +26,7 @@ const Navigate = () => {
     <div className="fixed w-full bg-white text-black z-50 ">
       <div className="container flex justify-between mx-auto py-5 px-[1.5rem] lg:px-0">
         <a
-          href="#home"
+          href="/"
           className="flex justify-center items-center animate__animated animate__fadeInLeft"
         >
           <Image src={logo} alt="" />
@@ -43,12 +44,12 @@ const Navigate = () => {
                   setActive(i);
                 }}
               >
-                <a href={`#${menu.id}`}>{menu.name}</a>
+                <a href={`${menu.id}`}>{menu.name}</a>
               </li>
             ))}
           </ul>
           <a
-            href="#contact_us"
+            href="/#contact_us"
             className="text-center ml-2 px-[24px] py-[12px] bg-primary-color text-[white]  font-[500] rounded-full"
           >
             Contact Us
@@ -96,7 +97,7 @@ const Navigate = () => {
                   setActive(i);
                 }}
               >
-                <a href={`#${menu.id}`}>{menu.name}</a>
+                <a href={`${menu.id}`}>{menu.name}</a>
               </li>
             ))}
             <li className="flex space-x-2 justify-start items-center ">
